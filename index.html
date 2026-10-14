@@ -482,7 +482,7 @@
   #videos { background: var(--dark, #12120f); }
   .video-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
   }
   .video-card {
@@ -501,11 +501,12 @@
   .video-card video, .video-card iframe {
     width: 100%;
     aspect-ratio: 16/9;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     background: #000;
     border: 0;
   }
+  .video-card--portrait video { aspect-ratio: 9/16; }
   .video-badge {
     position: absolute; top: 0.7rem; right: 0.7rem;
     background: var(--gold, #c9a84c); color: var(--deep, #0a0a08);
@@ -521,7 +522,6 @@
     text-decoration: none;
   }
   .video-caption:hover, .video-caption:focus-visible { color: var(--gold-light, #E8C97A); }
-  @media (max-width: 900px) { .video-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 600px) { .video-grid { grid-template-columns: 1fr; } }
   .gallery-overlay {
     position: absolute; inset: 0;
@@ -7031,7 +7031,7 @@
       <video controls playsinline preload="none" poster="/videos/dtf-transfer-detail.jpg"><source src="/videos/dtf-transfer-detail.mp4" type="video/mp4">Your browser does not support embedded videos.</video>
       <a class="video-caption" href="/videos/dtf-transfer-detail.html">DTF Transfer Detail</a>
     </div>
-    <div class="video-card">
+    <div class="video-card video-card--portrait">
       <video controls playsinline preload="none" poster="/videos/embroidered-tags-close-up.jpg"><source src="/videos/embroidered-tags-close-up.mp4" type="video/mp4">Your browser does not support embedded videos.</video>
       <a class="video-caption" href="/videos/embroidered-tags-close-up.html">Embroidered Tags Close-Up</a>
     </div>
