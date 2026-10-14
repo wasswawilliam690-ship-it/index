@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://jennifertextileskampalaug.com/sitemap.xml
+Sitemap: https://jennifertextileskampalaug.com/sitemap-images.xml
