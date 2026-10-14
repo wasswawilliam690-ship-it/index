@@ -1,67 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Jennifer Textiles sitemap.
-  The main page (index.html) is a single scrolling page. Its sections are
-  reached with #anchors, which search engines ignore, so they are only listed
-  here for reference:
-    #home  #textile-shop  #services  #screen-printing  #materials-gallery
-    #price-booklet  #order-calculator  #pricing  #gallery  #videos
-    #testimonials  #delivery  #location  #faq  #contact
-  Replace https://jennifertextileskampalaug.com with your real address if it differs.
-  Only keep a page below if its file is actually uploaded to your hosting.
--->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jennifertextileskampalaug.com/</loc>
     <lastmod>2026-10-14</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://jennifertextileskampalaug.com/og-image.jpg</image:loc>
-      <image:title>Jennifer Textiles - Embroidery &amp; Textile Supply, Kampala</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://jennifertextileskampalaug.com/about.html</loc>
     <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://jennifertextileskampalaug.com/contact.html</loc>
     <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://jennifertextileskampalaug.com/faq.html</loc>
     <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://jennifertextileskampalaug.com/shipping-returns.html</loc>
     <lastmod>2026-10-14</lastmod>
-    <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://jennifertextileskampalaug.com/privacy-policy.html</loc>
     <lastmod>2026-10-14</lastmod>
-    <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://jennifertextileskampalaug.com/terms-and-conditions.html</loc>
     <lastmod>2026-10-14</lastmod>
-    <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://jennifertextileskampalaug.com/sitemap.html</loc>
     <lastmod>2026-10-14</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
 </urlset>
