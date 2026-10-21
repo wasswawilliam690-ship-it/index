@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-<title>Jennifer Textiles | Embroidery &amp; Textile Supply in Kampala, Uganda</title>
+<title>Jennifer Textiles Kampala | Fabric, Printing &amp; Branding</title>
 <meta name="google-site-verification" content="DlfnjDhY8_NNfY49iCEGPEwz3f0btQwEC-DYBw6wW7k" />
-<meta name="description" content="Jennifer Textiles Kampala — embroidery, embroidery digitizing, DTF printing, screen printing, custom uniforms & quality textile supply at Nakivubo City Mall, Kampala, Uganda. Order online via WhatsApp.">
-<meta name="keywords" content="embroidery Kampala, DTF printing Kampala, screen printing Uganda, textile supply Kampala, embroidery digitizing Uganda, custom uniforms Kampala">
-<meta property="og:title" content="Jennifer Textiles | Embroidery &amp; Textile Supply in Kampala, Uganda">
-<meta property="og:description" content="Embroidery, digitizing, DTF printing, screen printing & textile supply at Nakivubo City Mall, Kampala.">
+<meta name="description" content="Jennifer Textiles Kampala: fabric and sewing supplies, embroidery and digitizing, DTF and screen printing, custom printed shirts, uniforms and business branding.">
+<meta name="keywords" content="textile shop Kampala, fabrics and sewing supplies Uganda, embroidery Kampala, embroidery digitizing, DTF printing Kampala, screen printing shirts, custom branded shirts, business branding, custom uniforms, textile supplier Kampala">
+<meta property="og:title" content="Jennifer Textiles Kampala | Fabric, Printing &amp; Branding">
+<meta property="og:description" content="Fabric and sewing supplies, embroidery and digitizing, DTF and screen printing, custom printed shirts, uniforms and business branding in Kampala, Uganda.">
 <meta property="og:type" content="business.business">
 <meta property="og:url" content="https://jennifertextileskampalaug.com/">
 <meta property="og:site_name" content="Jennifer Textiles">
@@ -20,8 +20,8 @@
 <meta property="og:image" content="https://jennifertextileskampalaug.com/images/jennifer-textiles-kampala-embroidery-and-textile-products.jpg">
 <meta property="og:image:alt" content="Jennifer Textiles Kampala - embroidery and textile products">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Jennifer Textiles | Embroidery &amp; Textile Supply in Kampala, Uganda">
-<meta name="twitter:description" content="Embroidery, digitizing, DTF printing, screen printing & textile supply at Nakivubo City Mall, Kampala.">
+<meta name="twitter:title" content="Jennifer Textiles Kampala | Fabric, Printing &amp; Branding">
+<meta name="twitter:description" content="Fabric and sewing supplies, embroidery and digitizing, DTF and screen printing, custom printed shirts, uniforms and business branding in Kampala, Uganda.">
 <meta name="twitter:image" content="https://jennifertextileskampalaug.com/images/jennifer-textiles-kampala-embroidery-and-textile-products.jpg">
 <meta name="twitter:image:alt" content="Jennifer Textiles Kampala - embroidery and textile products">
 <script type="application/ld+json">
@@ -42,7 +42,7 @@
   "name": "Jennifer Textiles",
   "url": "https://jennifertextileskampalaug.com/",
   "image": "https://jennifertextileskampalaug.com/images/jennifer-textiles-kampala-embroidery-and-textile-products.jpg",
-  "description": "Embroidery, digitizing, DTF printing, screen printing, uniforms and textile supplies in Kampala, Uganda.",
+  "description": "Textile and fabric shop, sewing supplies, embroidery and digitizing, DTF printing, screen printing, custom printed shirts, uniforms and business branding in Kampala, Uganda.",
   "telephone": "+256780989524",
   "address": {
     "@type": "PostalAddress",
@@ -933,6 +933,10 @@
     margin-top:2.5rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;
     opacity:0; animation:jwFadeUp 0.9s ease-out 2.15s forwards;
   }
+  .jw-auto-note{
+    margin-top:0.85rem; font-size:0.78rem;
+    color:rgba(243,236,217,0.6);
+  }
   .jw-btn-enter{
     background:#d4af37; color:#071530; font-family:'DM Sans', sans-serif; font-weight:600;
     font-size:0.92rem; padding:0.95rem 2.1rem; border-radius:3px; border:none; cursor:pointer;
@@ -996,14 +1000,14 @@
   }
 </style>
 
-<div id="jwOverlay">
+<div id="jwOverlay" role="dialog" aria-modal="true" aria-labelledby="jwTitle">
   <div class="jw-frame"></div>
   <div class="jw-wordmark">Jennifer Textiles</div>
   <div class="jw-locale">Nakivubo City Mall<br>Kampala, Uganda</div>
 
   <div class="jw-main">
     <div class="jw-eyebrow" id="jwGreeting">Est. Kampala</div>
-    <h1>
+    <h1 id="jwTitle">
       Welcome to<br><em>Jennifer</em> Textiles
       <svg class="jw-stitch-underline" viewBox="0 0 280 14" preserveAspectRatio="none">
         <path d="M4 7 L276 7" pathLength="220"/>
@@ -1019,9 +1023,10 @@
     </p>
 
     <div class="jw-cta-row">
-      <button class="jw-btn-enter" onclick="document.getElementById('jwOverlay').classList.add('jw-hide')">Enter the Shop →</button>
+      <button class="jw-btn-enter" type="button" onclick="closeWelcomeIntro()">Enter the Shop →</button>
       <a href="https://wa.me/256780989524?text=Hello%20Jennifer%20Textiles!%20I%27d%20like%20to%20know%20more." class="jw-btn-whatsapp" target="_blank">💬 Chat on WhatsApp</a>
     </div>
+    <p class="jw-auto-note">The shop will open automatically in 7 seconds, or enter now.</p>
     <p style="font-size:0.88rem; color:#0a0a08; background:var(--gold,#c9a84c); display:inline-block; padding:0.6rem 1.1rem; border-radius:4px; margin-top:1rem; font-weight:600;">
       ⚠️ Prices shown are estimates — final price confirmed via WhatsApp or a direct call.
     </p>
@@ -1039,6 +1044,45 @@
 </div>
 
 <script>
+  var jwOverlay = document.getElementById('jwOverlay');
+  var jwEnterButton = jwOverlay && jwOverlay.querySelector('.jw-btn-enter');
+  var jwWelcomeTimer;
+
+  function closeWelcomeIntro() {
+    if (!jwOverlay || jwOverlay.classList.contains('jw-hide')) return;
+    window.clearTimeout(jwWelcomeTimer);
+    jwOverlay.classList.add('jw-hide');
+    jwOverlay.setAttribute('aria-hidden', 'true');
+    var heroTitle = document.getElementById('home');
+    if (heroTitle) heroTitle.focus({ preventScroll: true });
+  }
+
+  if (jwOverlay) {
+    jwOverlay.setAttribute('aria-hidden', 'false');
+    if (jwEnterButton) jwEnterButton.focus();
+    jwWelcomeTimer = window.setTimeout(closeWelcomeIntro, 7000);
+    document.addEventListener('keydown', function(event) {
+      if (jwOverlay.classList.contains('jw-hide')) return;
+      if (event.key === 'Escape') {
+        closeWelcomeIntro();
+        return;
+      }
+      if (event.key !== 'Tab') return;
+
+      var focusable = jwOverlay.querySelectorAll('button:not([disabled]), a[href]');
+      if (!focusable.length) return;
+      var first = focusable[0];
+      var last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+  }
+
   // Dynamic greeting based on the visitor's local time of day
   (function() {
     var hour = new Date().getHours();
@@ -1163,7 +1207,7 @@
 </script>
 
 <!-- HERO -->
-<section class="hero" id="home">
+<section class="hero" id="home" tabindex="-1">
   <div class="hero-bg"></div>
   <div class="hero-pattern"></div>
   <div class="hero-left">
@@ -1173,8 +1217,8 @@
       <span class="highlight">Stories That Last</span>
     </h1>
     <p class="hero-sub">
-      Uganda's premier destination for embroidery, digitizing, screen printing,
-      and premium textile supply — delivering quality across the African continent.
+      Kampala's destination for fabrics and sewing supplies, embroidery and digitizing,
+      DTF and screen printing, custom printed shirts, uniforms, and business branding.
     </p>
     <div class="hero-actions">
       <a href="#contact" class="btn-primary">Get a Quote</a>
