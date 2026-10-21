@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" href="/images/jennifer%20textiles.png">
 
 <title>Jennifer Textiles Kampala | Fabric, Printing &amp; Branding</title>
 <meta name="google-site-verification" content="DlfnjDhY8_NNfY49iCEGPEwz3f0btQwEC-DYBw6wW7k" />
@@ -17,13 +17,13 @@
 <link rel="canonical" href="https://jennifertextileskampalaug.com/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-<meta property="og:image" content="https://jennifertextileskampalaug.com/images/jennifer-textiles-kampala-embroidery-and-textile-products.jpg">
-<meta property="og:image:alt" content="Jennifer Textiles Kampala - embroidery and textile products">
+<meta property="og:image" content="https://jennifertextileskampalaug.com/images/jennifer%20textiles.png">
+<meta property="og:image:alt" content="Jennifer Textiles company logo">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Jennifer Textiles Kampala | Fabric, Printing &amp; Branding">
 <meta name="twitter:description" content="Fabric and sewing supplies, embroidery and digitizing, DTF and screen printing, custom printed shirts, uniforms and business branding in Kampala, Uganda.">
-<meta name="twitter:image" content="https://jennifertextileskampalaug.com/images/jennifer-textiles-kampala-embroidery-and-textile-products.jpg">
-<meta name="twitter:image:alt" content="Jennifer Textiles Kampala - embroidery and textile products">
+<meta name="twitter:image" content="https://jennifertextileskampalaug.com/images/jennifer%20textiles.png">
+<meta name="twitter:image:alt" content="Jennifer Textiles company logo">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -41,6 +41,7 @@
   "@id": "https://jennifertextileskampalaug.com/#store",
   "name": "Jennifer Textiles",
   "url": "https://jennifertextileskampalaug.com/",
+  "logo": "https://jennifertextileskampalaug.com/images/jennifer%20textiles.png",
   "image": "https://jennifertextileskampalaug.com/images/jennifer-textiles-kampala-embroidery-and-textile-products.jpg",
   "description": "Textile and fabric shop, sewing supplies, embroidery and digitizing, DTF printing, screen printing, custom printed shirts, uniforms and business branding in Kampala, Uganda.",
   "telephone": "+256780989524",
@@ -119,6 +120,9 @@
     letter-spacing: -0.5px;
   }
   .nav-logo span { color: var(--white); font-weight: 400; font-style: italic; }
+  .nav-logo.brand-logo { display: inline-flex; align-items: center; gap: 0.65rem; text-decoration: none; }
+  .brand-logo img { width: 48px; height: 48px; object-fit: contain; border-radius: 50%; }
+  .footer-brand .brand-logo img { width: 64px; height: 64px; }
   .nav-links { display: flex; gap: 1.5rem; list-style: none; }
   .nav-links a {
     color: var(--text); text-decoration: none;
@@ -887,11 +891,13 @@
 
   .jw-wordmark{
     position:absolute; top:38px; left:44px;
+    display:flex; align-items:center; gap:0.6rem;
     font-family:'Playfair Display', serif;
     font-size:0.95rem; letter-spacing:0.14em; word-spacing:0.2em;
     color:#e8c968; text-transform:uppercase;
     opacity:0; animation:jwFadeDown 0.9s ease-out 0.3s forwards;
   }
+  .jw-wordmark img{width:44px;height:44px;object-fit:contain;border-radius:50%;}
   .jw-locale{
     position:absolute; top:40px; right:46px;
     font-size:0.72rem; letter-spacing:0.12em; word-spacing:0.15em;
@@ -978,7 +984,9 @@
     #jwOverlay *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; }
   }
   @media (max-width:560px){
-    .jw-wordmark, .jw-locale{ display:none; }
+    .jw-locale{ display:none; }
+    .jw-wordmark{top:20px;left:20px;font-size:0.72rem;}
+    .jw-wordmark img{width:36px;height:36px;}
     .jw-frame{ inset:10px; }
     .jw-footer{ bottom:22px; font-size:0.63rem; padding:0 1rem; }
     .jw-services-strip{ gap:1.4rem 1.8rem; margin-top:2.6rem; }
@@ -987,7 +995,9 @@
   }
   @media (max-height:760px){
     #jwOverlay{ padding:64px 1rem 56px; }
-    .jw-wordmark, .jw-locale{ display:none; }
+    .jw-locale{ display:none; }
+    .jw-wordmark{top:14px;left:16px;font-size:0.68rem;}
+    .jw-wordmark img{width:32px;height:32px;}
     .jw-main h1{ margin-top:0.4rem; }
     .jw-tagline{ margin-top:1rem; }
     .jw-tagline + .jw-tagline{ margin-top:0.5rem; }
@@ -1002,7 +1012,7 @@
 
 <div id="jwOverlay" role="dialog" aria-modal="true" aria-labelledby="jwTitle">
   <div class="jw-frame"></div>
-  <div class="jw-wordmark">Jennifer Textiles</div>
+  <div class="jw-wordmark"><img src="/images/jennifer%20textiles.png" alt="">Jennifer Textiles</div>
   <div class="jw-locale">Nakivubo City Mall<br>Kampala, Uganda</div>
 
   <div class="jw-main">
@@ -1098,7 +1108,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">Jennifer<span> Textiles</span></div>
+  <a class="nav-logo brand-logo" href="/" aria-label="Jennifer Textiles home"><img src="/images/jennifer%20textiles.png" alt="">Jennifer<span> Textiles</span></a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#services">Services</a></li>
     <li><a href="#screen-printing">Screen Print</a></li>
@@ -7485,7 +7495,7 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <span class="nav-logo">Jennifer<span> Textiles</span></span>
+      <a class="nav-logo brand-logo" href="/" aria-label="Jennifer Textiles home"><img src="/images/jennifer%20textiles.png" alt="">Jennifer<span> Textiles</span></a>
       <p>Uganda's premier embroidery, digitizing, screen printing, and textile supply specialist. Serving clients across Africa with quality you can feel.</p>
       <!-- EDIT: replace # with your real profile URLs once set up -->
       <div style="display:flex; gap:0.9rem; margin-top:1.1rem;">
